@@ -1,9 +1,105 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sergey Bl — Games</title>
-<style>body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0e1016;color:#e8ecf4;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}.c{max-width:520px;padding:40px}a{color:#6ea8ff;text-decoration:none;display:block;margin:8px 0}h1{letter-spacing:1px}</style>
-</head><body><div class="c"><h1>Sergey Bl — Games</h1>
-<p style="color:#9aa3b5">Indie mobile games.</p>
-<a href="/Mosaic-Privacy/">Mosaic — Privacy</a>
-<a href="/Mosaic-Terms/">Mosaic — Terms</a>
-</div></body></html>
+<title>SB Games — Mobile Game Studio</title>
+<meta name="description" content="SB Games — an indie studio crafting relaxing, beautiful mobile games.">
+<style>
+  :root{--bg:#0a0d14;--card:#141a26;--ink:#eaf0fb;--mut:#93a0b8;--a1:#7c6cff;--a2:#22d3ee}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.55;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(60vw 60vw at 15% -10%,rgba(124,108,255,.25),transparent 60%),
+      radial-gradient(50vw 50vw at 100% 10%,rgba(34,211,238,.18),transparent 60%),
+      radial-gradient(40vw 40vw at 50% 120%,rgba(124,108,255,.15),transparent 60%)}
+  .stars{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+    background-image:radial-gradient(1px 1px at 20% 30%,#fff,transparent),
+      radial-gradient(1px 1px at 70% 60%,#fff,transparent),
+      radial-gradient(1px 1px at 40% 80%,#cbd5ff,transparent),
+      radial-gradient(1px 1px at 85% 25%,#fff,transparent),
+      radial-gradient(1px 1px at 55% 15%,#bfe9ff,transparent),
+      radial-gradient(1px 1px at 10% 70%,#fff,transparent);
+    background-size:cover}
+  .wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 22px}
+  header{padding:26px 0;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px}
+  .logo{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-size:20px;
+    background:linear-gradient(135deg,var(--a1),var(--a2));box-shadow:0 8px 24px rgba(124,108,255,.35)}
+  nav a{color:var(--mut);margin-left:22px;font-size:14px;font-weight:600}
+  nav a:hover{color:var(--ink)}
+  .hero{padding:70px 0 40px;text-align:center}
+  .kicker{color:var(--a2);font-weight:800;letter-spacing:3px;font-size:13px}
+  h1{font-size:clamp(38px,7vw,68px);line-height:1.05;margin:14px 0 16px;font-weight:850}
+  .grad{background:linear-gradient(120deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--mut);font-size:clamp(16px,2.4vw,20px);max-width:560px;margin:0 auto}
+  .sec{margin:56px 0}
+  .sec h2{font-size:14px;letter-spacing:2px;color:var(--mut);text-transform:uppercase;margin-bottom:18px}
+  .games{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:linear-gradient(180deg,var(--card),#0f1420);border:1px solid rgba(255,255,255,.06);
+    border-radius:18px;padding:22px;transition:transform .18s,border-color .18s,box-shadow .18s}
+  .card:hover{transform:translateY(-4px);border-color:rgba(124,108,255,.4);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+  .ico{width:60px;height:60px;border-radius:15px;display:grid;place-items:center;font-size:30px;margin-bottom:14px;
+    background:linear-gradient(135deg,#2a3350,#1a2136)}
+  .card h3{font-size:20px}.card .genre{color:var(--a2);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+  .card p{color:var(--mut);font-size:14px;margin:8px 0 16px}
+  .btn{display:inline-block;padding:9px 16px;border-radius:11px;font-weight:700;font-size:14px;
+    background:linear-gradient(135deg,var(--a1),var(--a2));color:#0a0d14}
+  .btn.soon{background:none;border:1px solid rgba(255,255,255,.14);color:var(--mut);cursor:default}
+  .badge{float:right;font-size:11px;color:var(--mut);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:3px 10px}
+  footer{border-top:1px solid rgba(255,255,255,.07);margin-top:60px;padding:28px 0 50px;color:var(--mut);font-size:14px;
+    display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+  footer a{color:var(--mut)}footer a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="glow"></div><div class="stars"></div>
+<div class="wrap">
+  <header>
+    <div class="brand"><div class="logo">🎮</div> SB&nbsp;Games</div>
+    <nav><a href="#games">Games</a><a href="/Mosaic-Privacy/">Privacy</a><a href="/Mosaic-Terms/">Terms</a></nav>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">INDIE MOBILE STUDIO</div>
+    <h1>We craft <span class="grad">relaxing</span><br>mobile games</h1>
+    <p class="sub">Small, polished games made with care — puzzles, arcades and cozy worlds for your phone.</p>
+  </section>
+
+  <section class="sec" id="games">
+    <h2>Our Games</h2>
+    <div class="games">
+      <div class="card">
+        <div class="ico">🧩</div>
+        <span class="badge">Live on Google Play</span>
+        <div class="genre">Puzzle</div>
+        <h3>Mosaic</h3>
+        <p>A calm, satisfying mosaic puzzle. Fill the grid, complete beautiful pictures, unwind.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.sergeybl.mosaic" target="_blank" rel="noopener">Google Play →</a>
+      </div>
+      <div class="card">
+        <div class="ico">🛰️</div>
+        <span class="badge">In development</span>
+        <div class="genre">Arcade</div>
+        <h3>More coming</h3>
+        <p>New titles are in the works — arcade, casual and cozy experiences. Stay tuned.</p>
+        <span class="btn soon">Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 SB Games · Indie mobile games</div>
+    <div>
+      <a href="mailto:blotskiy.sergey@gmail.com">blotskiy.sergey@gmail.com</a>
+      &nbsp;·&nbsp; <a href="/Mosaic-Privacy/">Privacy</a>
+      &nbsp;·&nbsp; <a href="/Mosaic-Terms/">Terms</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
